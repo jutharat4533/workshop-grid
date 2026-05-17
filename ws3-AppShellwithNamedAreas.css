@@ -1,0 +1,117 @@
+body {
+  margin: 24px;
+  font-family: sans-serif;
+  background: #f8fafc;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 72px 1fr 220px;
+  grid-template-rows: 56px 1fr;
+  grid-template-areas:
+    "topbar topbar topbar"
+    "rail workspace inspector";
+  gap: 10px;
+  height: 340px;
+}
+
+.topbar {
+  grid-area: topbar;
+  background: #0f172a;
+  color: white;
+  border-radius: 6px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 14px;
+}
+
+.topbar a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rail {
+  grid-area: rail;
+  background: #e0f2fe;
+  border: 1px solid #bae6fd;
+  border-radius: 6px;
+  padding: 10px;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.rail button {
+  border: 0;
+  border-radius: 4px;
+  background: #0369a1;
+  color: white;
+  padding: 8px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.workspace {
+  grid-area: workspace;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 22px;
+}
+
+.workspace h2 {
+  margin: 0 0 8px;
+  color: #0f172a;
+  font-size: 22px;
+}
+
+.workspace p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.inspector {
+  grid-area: inspector;
+  background: #ecfdf5;
+  border: 1px solid #bbf7d0;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.inspector label {
+  display: block;
+  margin: 12px 0 6px;
+  color: #166534;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.control {
+  height: 8px;
+  width: 100%;
+  border-radius: 999px;
+  background: #22c55e;
+}
+
+.control--short {
+  width: 62%;
+}

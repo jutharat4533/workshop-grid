@@ -1,0 +1,51 @@
+div.style {
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  height: 320px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  grid-template-areas:
+    "pic1 pic2 pic3"
+    "pic4 pic5 pic6";
+  gap: 12px;
+  padding: auto;
+}
+.style > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic1 {
+  border: 1px solid rgb(63, 137, 217);
+  background-color: rgb(63, 137, 217);
+  border-radius: 8px;
+}
+.pic2 {
+  border: 1px solid #7224cb;
+  background-color: #7224cb;
+  border-radius: 8px;
+}
+.pic3 {
+  border: 1px solid plum;
+  background-color: plum;
+  border-radius: 8px;
+}
+.pic4 {
+  border: 1px solid rgb(255, 179, 0);
+  background-color: rgb(255, 179, 0);
+  border-radius: 8px;
+}
+.pic5 {
+  border: 1px solid rgb(26, 189, 154);
+  background-color: rgb(26, 189, 154);
+  border-radius: 8px;
+}
+.pic6 {
+  border: 1px solid rgb(86, 52, 163);
+  background-color: rgb(86, 52, 163);
+  border-radius: 8px;
+}

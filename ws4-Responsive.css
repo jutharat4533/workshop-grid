@@ -1,0 +1,33 @@
+body {
+  margin: 24px;
+  font-family: sans-serif;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card__image {
+  height: 120px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.card__name {
+  margin: 12px 12px 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card__price {
+  margin: 0 12px 12px;
+  color: #2563eb;
+  font-size: 14px;
+}
